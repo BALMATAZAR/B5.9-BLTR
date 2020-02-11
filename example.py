@@ -1,12 +1,20 @@
+# Импорт модулей
+
 import sys
 import os
 import time
 
-def trying_timer(script, trying = 100):
-	for i in range(int(trying)):
-		os.system(script)
+# Функция многократного запуска скприта переданного в аргументе
 
+def trying_timer(script, trying = 1):
+    for i in range (int(trying)):
+        os.system(script)
+
+# Старт таймера исполнения
+        
 timer_start = time.time()
+
+# Проверка на количество переданных аргументов и запуск скрипта с заданными параметрами.
 
 try:
 	if len(sys.argv) == 2:
