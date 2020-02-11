@@ -1,5 +1,7 @@
+# Импорт модуля
 import time
 
+# Создание класса
 class TestTimer():
 
 	def __enter__(self):
